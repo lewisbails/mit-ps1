@@ -29,7 +29,7 @@ public class ExtractTest {
     private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
     private static final Tweet tweet3 = new Tweet(3, "lewis", "@alyssa hey there", d3);
     private static final Tweet tweet4 = new Tweet(4, "alyssa", "@lewis. hey there to you too!", d4);
-    private static final Tweet tweet5 = new Tweet(5, "alyssa", "@lewis @bbitdiddle @alYSsa hey there to you too!", d5);
+    private static final Tweet tweet5 = new Tweet(5, "alyssa", "@lewis @bbitdiDDle @alyssa hey there to you too!", d5);
 
     @Test(expected=AssertionError.class)
     public void testAssertionsEnabled() {
@@ -71,6 +71,9 @@ public class ExtractTest {
     public void testGetMentionedUsersMentionValidMultipleTimes() {
         Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet3,tweet5));
         assertTrue("expected length of 3", mentionedUsers.size()==3);
+
+        mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet5));
+        assertTrue("expected length of 2", mentionedUsers.size()==2);
     }
 
     @Test

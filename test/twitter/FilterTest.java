@@ -28,7 +28,7 @@ public class FilterTest {
     private static final Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
     private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
     private static final Tweet tweet3 = new Tweet(3, "lewis", "@alyssa hey there", d3);
-    private static final Tweet tweet4 = new Tweet(4, "alyssa", "@lewis. hey there to you too!", d4);
+    private static final Tweet tweet4 = new Tweet(4, "alyssa", "@lewis @mit.com hey there to you too!", d4);
     private static final Tweet tweet5 = new Tweet(5, "alyssa", "@lewis @bbitdiddle @alyssa hey there to you too!", d5);
     
     @Test(expected=AssertionError.class)
