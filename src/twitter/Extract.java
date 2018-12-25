@@ -67,8 +67,8 @@ public class Extract {
         for (Tweet tweet : tweets){
             Matcher matcher = pattern.matcher(tweet.getText());
             while (matcher.find()){
-                if (mentionedUsers==null) mentionedUsers = new HashSet<>(Arrays.asList(matcher.group(1)));
-                else mentionedUsers.add(matcher.group(1));
+                if (mentionedUsers==null) mentionedUsers = new HashSet<>(Arrays.asList(matcher.group(1).toLowerCase()));
+                else mentionedUsers.add(matcher.group(1).toLowerCase());
             }
         }
         if (mentionedUsers==null) return new HashSet<>();
