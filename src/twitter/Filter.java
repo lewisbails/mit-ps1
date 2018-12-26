@@ -3,7 +3,10 @@
  */
 package twitter;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -35,6 +38,14 @@ public class Filter {
             if (tweet.getAuthor().toLowerCase().equals(username.toLowerCase()) && !tweetMatches.contains(tweet)){
                 tweetMatches.add(tweet);
             }
+        }
+        return tweetMatches;
+    }
+
+    public static List<Tweet> containsHashtag(List<Tweet> tweets, String hashtag){
+        List<Tweet> tweetMatches = new ArrayList<>();
+        for (Tweet tweet : tweets){
+            if (tweet.getText().toLowerCase().contains(hashtag.toLowerCase()) && !tweetMatches.contains(tweet)) tweetMatches.add(tweet);
         }
         return tweetMatches;
     }

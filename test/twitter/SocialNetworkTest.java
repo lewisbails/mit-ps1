@@ -26,7 +26,7 @@ public class SocialNetworkTest {
 
     private static final Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
     private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
-    private static final Tweet tweet3 = new Tweet(3, "lewis", "@alyssa hey there", d3);
+    private static final Tweet tweet3 = new Tweet(3, "lewis", "@alyssa hey there #hype #time", d3);
     private static final Tweet tweet4 = new Tweet(4, "alyssa", "@lewis hey there to you too!", d4);
     private static final Tweet tweet5 = new Tweet(5, "alyssa", "@lewis @bbitDiddle @alySSa hey there to you too!", d5);
     
@@ -46,8 +46,8 @@ public class SocialNetworkTest {
         Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(Arrays.asList(tweet1,tweet2,tweet3,tweet4,tweet5));
 
         assertTrue("alyssa follows 2 people", followsGraph.get("alyssa").size()==2);
-        assertTrue("bbitdiddle follows 0 people", followsGraph.get("bbitdiddle").size()==0);
-        assertTrue("lewis follows 1 person", followsGraph.get("lewis").size()==1);
+        assertTrue("bbitdiddle follows 2 people", followsGraph.get("bbitdiddle").size()==2);
+        assertTrue("lewis follows 2 people", followsGraph.get("lewis").size()==2);
         assertNotNull(followsGraph.get("bbitdiddle"));
     }
     
@@ -63,11 +63,11 @@ public class SocialNetworkTest {
     public void testInfluencers() {
         Map<String, Set<String>> followsGraph = new HashMap<>();
         followsGraph.put("alyssa",new HashSet<>(Arrays.asList("lewis","bbitdiddle")));
-        followsGraph.put("lewis",new HashSet<>(Arrays.asList("alyssa")));
+        followsGraph.put("lewis",new HashSet<>(Arrays.asList("bbitdiddle")));
         followsGraph.put("bbitdiddle",new HashSet<>());
         List<String> influencers = SocialNetwork.influencers(followsGraph);
 
-        assertTrue("alyssa is the mover and shaker", influencers.get(0).equals("alyssa"));
+        assertTrue("bbitdiddle is the mover and shaker", influencers.get(0).equals("bbitdiddle"));
         assertTrue("lewis is 2nd", influencers.get(1).equals("lewis"));
     }
 

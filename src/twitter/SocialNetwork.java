@@ -42,8 +42,36 @@ public class SocialNetwork {
      */
     public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {
         Map<String,Set<String>> map = new HashMap<>();
+        Set<String> tweetHashtags;
+        List<Tweet> tweetsCommonHashtag;
+
         for (Tweet tweet : tweets){
+            // add authors the author mentions
             map.put(tweet.getAuthor(),Extract.getMentionedUsers(Arrays.asList(tweet)));
+            // add authors who use the same hashtags
+            tweetHashtags = Extract.getHashtags(Arrays.asList(tweet));
+            for (String tweetHashtag : tweetHashtags){
+                tweetsCommonHashtag = Filter.containsHashtag(tweets,tweetHashtag);
+                for (Tweet tweetCommonHashtag : tweetsCommonHashtag){
+                    if (!tweetCommonHashtag.getAuthor().equals(tweet.getAuthor())){
+                        map.get(tweet.getAuthor()).add(tweetCommonHashtag.getAuthor());
+                    }
+                }
+            }
+        }
+        // connect authors via triadic closure
+        Map<String,Set<String>> slatedForClosure = new HashMap<>();
+        for (String author : map.keySet()){
+            for (String followee : map.get(author)){
+                if (map.containsKey(followee) && map.get(followee).contains(author)){
+                    Set<String> newAuthors = new HashSet<>(map.get(followee));
+                    slatedForClosure.put(author,newAuthors);
+                    slatedForClosure.get(author).remove(author);
+                }
+            }
+        }
+        for (String author : map.keySet()){
+            map.get(author).addAll(slatedForClosure.getOrDefault(author,new HashSet<>()));
         }
         return map;
     }
@@ -58,7 +86,15 @@ public class SocialNetwork {
      *         descending order of follower count.
      */
     public static List<String> influencers(Map<String, Set<String>> followsGraph) {
-        List<String> movers = followsGraph.entrySet().stream().sorted(comparingInt(e->e.getValue().size())).map(Map.Entry::getKey).collect(Collectors.toList());
+        Map<String,Integer> influenceCount = new HashMap<>();
+        for (String author : followsGraph.keySet()){
+            for (String followed : followsGraph.get(author)){
+                int count = influenceCount.getOrDefault(followed,0);
+                influenceCount.put(followed, count + 1);
+            }
+        }
+
+        List<String> movers = influenceCount.entrySet().stream().sorted(comparingInt(e->e.getValue())).map(Map.Entry::getKey).collect(Collectors.toList());
         Collections.reverse(movers);
         return movers;
     }

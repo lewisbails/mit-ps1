@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d03d5b76-3621-45f4-bb09-37ddfa1bde09" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/twitter/Extract.java" afterPath="$PROJECT_DIR$/src/twitter/Extract.java" />
+      <change beforePath="$PROJECT_DIR$/src/twitter/Filter.java" afterPath="$PROJECT_DIR$/src/twitter/Filter.java" />
       <change beforePath="$PROJECT_DIR$/src/twitter/SocialNetwork.java" afterPath="$PROJECT_DIR$/src/twitter/SocialNetwork.java" />
-      <change beforePath="$PROJECT_DIR$/test/twitter/ExtractTest.java" afterPath="$PROJECT_DIR$/test/twitter/ExtractTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/twitter/FilterTest.java" afterPath="$PROJECT_DIR$/test/twitter/FilterTest.java" />
       <change beforePath="$PROJECT_DIR$/test/twitter/SocialNetworkTest.java" afterPath="$PROJECT_DIR$/test/twitter/SocialNetworkTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +17,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Extract.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/twitter/Extract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/twitter/Filter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tweet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/twitter/Tweet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding>
+                <element signature="e#1793#1794#0" expanded="true" />
+                <element signature="e#1822#1823#0" expanded="true" />
+                <element signature="e#1954#1955#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SocialNetwork.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/twitter/SocialNetwork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +68,8 @@
       <file leaf-file-name="SocialNetworkTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/twitter/SocialNetworkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="70" column="71" lean-forward="true" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
+            <state relative-caret-position="-173">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,11 +94,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/twitter/Filter.java" />
         <option value="$PROJECT_DIR$/test/twitter/FilterTest.java" />
-        <option value="$PROJECT_DIR$/test/twitter/SocialNetworkTest.java" />
         <option value="$PROJECT_DIR$/test/twitter/ExtractTest.java" />
+        <option value="$PROJECT_DIR$/src/twitter/Filter.java" />
         <option value="$PROJECT_DIR$/src/twitter/Extract.java" />
+        <option value="$PROJECT_DIR$/test/twitter/SocialNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/twitter/SocialNetwork.java" />
       </list>
     </option>
@@ -160,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SocialNetworkTest">
+  <component name="RunManager" selected="JUnit.SocialNetworkTest.testInfluencers">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -195,56 +230,6 @@
       <option name="MAIN_CLASS_NAME" value="twitter.ExtractTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ExtractTest.testGetMentionedUsersMentionInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="twitter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mit-ps1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="twitter" />
-      <option name="MAIN_CLASS_NAME" value="twitter.ExtractTest" />
-      <option name="METHOD_NAME" value="testGetMentionedUsersMentionInvalid" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ExtractTest.testGetMentionedUsersMentionValidMultipleTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="twitter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mit-ps1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="twitter" />
-      <option name="MAIN_CLASS_NAME" value="twitter.ExtractTest" />
-      <option name="METHOD_NAME" value="testGetMentionedUsersMentionValidMultipleTimes" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -295,6 +280,56 @@
       <option name="MAIN_CLASS_NAME" value="twitter.SocialNetworkTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SocialNetworkTest.testGuessFollowsGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="twitter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mit-ps1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="twitter" />
+      <option name="MAIN_CLASS_NAME" value="twitter.SocialNetworkTest" />
+      <option name="METHOD_NAME" value="testGuessFollowsGraph" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SocialNetworkTest.testInfluencers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="twitter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mit-ps1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="twitter" />
+      <option name="MAIN_CLASS_NAME" value="twitter.SocialNetworkTest" />
+      <option name="METHOD_NAME" value="testInfluencers" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -367,19 +402,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetMentionedUsersMentionValidMultipleTimes" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetMentionedUsersMentionInvalid" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ExtractTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FilterTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ExtractTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FilterTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest.testGuessFollowsGraph" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest.testInfluencers" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ExtractTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FilterTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetMentionedUsersMentionValidMultipleTimes" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetMentionedUsersMentionInvalid" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest.testInfluencers" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest.testGuessFollowsGraph" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SocialNetworkTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ExtractTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FilterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -397,44 +432,44 @@
       <option name="presentableId" value="Default" />
       <updated>1545744089123</updated>
       <workItem from="1545744326949" duration="4649000" />
-      <workItem from="1545760889956" duration="4791000" />
+      <workItem from="1545760889956" duration="9263000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExtractTest - 2018.12.25 at 20h 40m 11s.xml">
-      <configuration name="ExtractTest" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 44m 29s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest - 2018.12.25 at 20h 44m 15s.xml">
-      <configuration name="ExtractTest" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 44m 35s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest - 2018.12.25 at 21h 31m 03s.xml">
-      <configuration name="ExtractTest" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 45m 23s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest_testGetMentionedUsersMentionValidMultipleTimes - 2018.12.25 at 20h 40m 45s.xml">
-      <configuration name="ExtractTest.testGetMentionedUsersMentionValidMultipleTimes" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 49m 44s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest_testGetMentionedUsersMentionValidMultipleTimes - 2018.12.25 at 20h 41m 36s.xml">
-      <configuration name="ExtractTest.testGetMentionedUsersMentionValidMultipleTimes" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 50m 54s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest_testGetMentionedUsersMentionValidMultipleTimes - 2018.12.25 at 20h 43m 58s.xml">
-      <configuration name="ExtractTest.testGetMentionedUsersMentionValidMultipleTimes" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 52m 19s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FilterTest - 2018.12.25 at 21h 06m 45s.xml">
-      <configuration name="FilterTest" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 53m 13s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FilterTest - 2018.12.25 at 21h 19m 10s.xml">
-      <configuration name="FilterTest" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testGuessFollowsGraph - 2018.12.26 at 17h 53m 38s.xml">
+      <configuration name="SocialNetworkTest.testGuessFollowsGraph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SocialNetworkTest - 2018.12.25 at 21h 39m 30s.xml">
-      <configuration name="SocialNetworkTest" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testInfluencers - 2018.12.26 at 17h 53m 57s.xml">
+      <configuration name="SocialNetworkTest.testInfluencers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SocialNetworkTest - 2018.12.25 at 21h 43m 06s.xml">
-      <configuration name="SocialNetworkTest" configurationId="JUnit" />
+    <history-entry file="SocialNetworkTest_testInfluencers - 2018.12.26 at 17h 54m 34s.xml">
+      <configuration name="SocialNetworkTest.testInfluencers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9440000" />
+    <option name="totallyTimeSpent" value="13912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -449,7 +484,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3366174" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3366174" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33990148" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -461,7 +496,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39901477" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45648605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -478,7 +513,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -534,26 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/twitter/Tweet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#1954#1955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/twitter/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/twitter/FilterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -573,26 +588,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/twitter/Tweet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/twitter/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/twitter/Extract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="140">
+          <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/twitter/SocialNetworkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="70" column="71" lean-forward="true" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
+        <state relative-caret-position="-173">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/twitter/SocialNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        <state relative-caret-position="204">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

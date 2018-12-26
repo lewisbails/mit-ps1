@@ -77,4 +77,17 @@ public class Extract {
         return mentionedUsers;
     }
 
+    public static Set<String> getHashtags(List<Tweet> tweets) {
+        Set<String> hashtags= new HashSet<>();
+        String mentionString = "(#[\\w_-]+)";
+        Pattern pattern = Pattern.compile(mentionString);
+        for (Tweet tweet : tweets){
+            Matcher matcher = pattern.matcher(tweet.getText());
+            while (matcher.find()){
+                    hashtags.add(matcher.group(1).toLowerCase());
+            }
+        }
+        return hashtags;
+    }
+
 }
